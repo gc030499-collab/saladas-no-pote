@@ -284,10 +284,11 @@ h1, h2, h3, h4, p { margin: 0; }
   z-index: 1;
   background: var(--sage-darker);
 }
-.hero-video__poster {
+.hero-video .hero-video__poster {
   position: absolute;
   inset: 0;
   z-index: 2;
+  display: none;
   background: linear-gradient(160deg, var(--sage) 0%, var(--sage-darker) 100%);
 }
 .hero-video__poster .media__fallback {
@@ -295,7 +296,7 @@ h1, h2, h3, h4, p { margin: 0; }
 }
 .hero-video__poster .media__fallback-text { color: var(--on-dark); opacity: 0.9; max-width: none; }
 .hero-video__poster .media__icon { width: 48px; height: 48px; opacity: 0.95; color: var(--yellow-warm); }
-.hero-video.has-video .hero-video__poster { display: none; }
+.hero-video.is-missing .hero-video__poster { display: flex; align-items: center; justify-content: center; }
 
 .hero__cta {
   margin-top: 30px;

@@ -46,14 +46,15 @@
     }
   }
 
-  // Vídeo real só substitui o poster quando o arquivo carrega de verdade.
+  // O vídeo real fica sempre visível; o fallback só aparece se o arquivo
+  // realmente falhar (evita depender de 'loadeddata', que em muitos
+  // navegadores mobile não dispara sem toque do usuário).
   function setupHeroVideo() {
     var wrap = document.querySelector('.hero-video');
     if (!wrap) return;
     var video = wrap.querySelector('video');
     if (!video) return;
-    video.addEventListener('loadeddata', function () { wrap.classList.add('has-video'); });
-    video.addEventListener('error', function () { wrap.classList.remove('has-video'); }, true);
+    video.addEventListener('error', function () { wrap.classList.add('is-missing'); });
   }
 
   // ---------- Preços vindos só do config.js ----------
