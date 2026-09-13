@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saladas no Pote — Receitas Práticas e Cheias de Sabor</title>
+<meta name="description" content="Descubra receitas de saladas no pote, molhos e combinações práticas para deixar suas refeições mais variadas e saborosas.">
+
+<meta property="og:title" content="Saladas no Pote — Receitas Práticas e Cheias de Sabor">
+<meta property="og:description" content="Descubra receitas de saladas no pote, molhos e combinações práticas para deixar suas refeições mais variadas e saborosas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script>
+  // Definida cedo (antes do body) pra pegar até o erro de imagens eager, que disparam antes do main.js carregar.
+  window.handleMediaError = function (el) {
+    var wrap = el.closest('.media');
+    if (wrap) wrap.classList.add('is-missing');
+  };
+</script>
+</head>
+<body>
+
+<a class="visually-hidden" href="#hero-titulo" style="position:absolute;left:-9999px;">Ir para o conteúdo</a>
+
+<!-- ===================== BLOCO 1 — HERO ===================== -->
+<header class="hero" id="hero">
+  <div class="container">
+    <div>
+      <p class="hero__brand">
+        <svg class="hero__brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/></svg>
+        Saladas no Pote
+      </p>
+
+      <h1 class="hero__title" id="hero-titulo">
+        Salada no pote<br><strong>não precisa ter gosto de dieta.</strong>
+      </h1>
+
+      <p class="hero__subtitle">
+        Receitas práticas, cremosas e cheias de sabor para deixar suas refeições leves com gosto de comida de verdade.
+      </p>
+
+      <p class="hero__tagline">Coma leve. Sem comer triste.</p>
+    </div>
+
+    <div class="hero__video-wrap">
+      <div class="hero-video">
+        <video
+          class="hero-video__video"
+          controls
+          playsinline
+          preload="metadata">
+          <source src="assets/video-salada.mp4" type="video/mp4">
+        </video>
+        <div class="media hero-video__poster" aria-hidden="true">
+          <img src="assets/img/poster-salada.webp" alt="" loading="eager" onerror="handleMediaError(this)">
+          <div class="media__fallback">
+            <svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M10 8.5L15.5 12L10 15.5V8.5Z" fill="currentColor" stroke="none"/></svg>
+            <span class="media__fallback-text">Vídeo em breve</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__cta">
+      <button type="button" class="btn btn--primary" data-scroll-target="#oferta" data-track="hero_cta_click">
+        Quero minhas receitas
+      </button>
+      <p class="microcopy">Acesso digital • Veja as opções abaixo</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== BLOCO 2 — VITRINE VISUAL ===================== -->
+  <section class="section section--tight" id="vitrine" aria-labelledby="vitrine-titulo">
+    <div class="container">
+      <p class="eyebrow">Um gostinho do que vem por aí</p>
+      <h2 class="section-title" id="vitrine-titulo">Sim… tudo isso é salada no pote.</h2>
+      <p class="section-subtext">Receitas bonitas, práticas e cheias de sabor para sair do básico.</p>
+    </div>
+
+    <div class="carousel carousel--saladas" data-track-name="recipe_carousel_interaction">
+      <ul class="carousel__track" role="list" aria-label="Fotos de saladas no pote" tabindex="0">
+        <li class="carousel__item">
+          <div class="media">
+            <img src="assets/img/salada-01.webp" alt="Salada no pote com frango grelhado, abacate, feta, milho e quinoa" loading="lazy" onerror="handleMediaError(this)">
+            <div class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/><path d="M4 18c3-3 7-6 16-14"/></svg></div>
+          </div>
+        </li>
+        <li class="carousel__item">
+          <div class="media">
+            <img src="assets/img/salada-02.webp" alt="Salada no pote com salmão grelhado, alface romana e lascas de parmesão" loading="lazy" onerror="handleMediaError(this)">
+            <div class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/><path d="M4 18c3-3 7-6 16-14"/></svg></div>
+          </div>
+        </li>
+        <li class="carousel__item">
+          <div class="media">
+            <img src="assets/img/salada-03.webp" alt="Salada no pote com camarão grelhado, manga e abacate" loading="lazy" onerror="handleMediaError(this)">
+            <div class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/><path d="M4 18c3-3 7-6 16-14"/></svg></div>
+          </div>
+        </li>
+        <li class="carousel__item">
+          <div class="media">
+            <img src="assets/img/salada-04.webp" alt="Salada no pote com frango, mussarela de búfala, tomate cereja e manjericão" loading="lazy" onerror="handleMediaError(this)">
+            <div class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/><path d="M4 18c3-3 7-6 16-14"/></svg></div>
+          </div>
+        </li>
+        <li class="carousel__item">
+          <div class="media">
+            <img src="assets/img/salada-05.webp" alt="Pote de salada vista de cima mostrando todas as camadas coloridas" loading="lazy" onerror="handleMediaError(this)">
+            <div class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/><path d="M4 18c3-3 7-6 16-14"/></svg></div>
+          </div>
+        </li>
+        <li class="carousel__item">
+          <div class="media">
+            <img src="assets/img/salada-06.webp" alt="Pote de salada pronto para levar, com aparência fresca e apetitosa" loading="lazy" onerror="handleMediaError(this)">
+            <div class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/><path d="M4 18c3-3 7-6 16-14"/></svg></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="carousel__hint">Deslize para ver mais →</p>
+    </div>
+  </section>
+
+  <!-- ===================== BLOCO 3 — O QUE A COLEÇÃO INCLUI ===================== -->
+  <section class="section" id="inclui" aria-labelledby="inclui-titulo">
+    <div class="container">
+      <p class="eyebrow">Coleção Completa</p>
+      <h2 class="section-title" id="inclui-titulo">Na Coleção Completa você ainda recebe…</h2>
+
+      <div class="includes">
+        <div class="feature-highlight">
+          <span class="feature-highlight__number">70</span>
+          <span class="feature-highlight__label">Receitas de saladas no pote</span>
+        </div>
+        <div class="feature-highlight">
+          <span class="feature-highlight__number">30</span>
+          <span class="feature-highlight__label">Receitas de molhos</span>
+        </div>
+        <div class="feature-highlight">
+          <span class="feature-highlight__number">20</span>
+          <span class="feature-highlight__label">Smoothies</span>
+        </div>
+        <div class="feature-highlight">
+          <span class="feature-highlight__number">15</span>
+          <span class="feature-highlight__label">Águas saborizadas</span>
+        </div>
+        <div class="feature-highlight">
+          <span class="feature-highlight__number">10</span>
+          <span class="feature-highlight__label">Shots matinais</span>
+        </div>
+        <div class="feature-highlight feature-highlight--icon">
+          <span class="feature-highlight__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+          </span>
+          <span class="feature-highlight__label">Acesso digital</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOCO 4 — PROVAS / DEPOIMENTOS ===================== -->
+  <section class="section section--tight" id="depoimentos" aria-labelledby="depoimentos-titulo">
+    <div class="container">
+      <p class="eyebrow">Quem já recebeu</p>
+      <h2 class="section-title" id="depoimentos-titulo">Quem já testou, conta melhor.</h2>
+      <p class="section-subtext">Algumas impressões de quem recebeu o material e colocou as receitas em prática.</p>
+    </div>
+
+    <div class="carousel carousel--depoimentos" data-track-name="testimonial_carousel_interaction">
+      <ul class="carousel__track" role="list" aria-label="Depoimentos de quem recebeu o material" tabindex="0">
+        <li class="carousel__item">
+          <button type="button" class="testimonial" data-index="1" aria-label="Ampliar depoimento">
+            <span class="testimonial__frame">
+              <img src="assets/img/depoimento-01.webp" alt="Depoimento da Vanessa sobre o material" loading="lazy" width="760" height="1685">
+            </span>
+          </button>
+        </li>
+        <li class="carousel__item">
+          <button type="button" class="testimonial" data-index="2" aria-label="Ampliar depoimento">
+            <span class="testimonial__frame">
+              <img src="assets/img/depoimento-02.webp" alt="Depoimento da Simone sobre o material" loading="lazy" width="760" height="1863">
+            </span>
+          </button>
+        </li>
+        <li class="carousel__item">
+          <button type="button" class="testimonial" data-index="3" aria-label="Ampliar depoimento">
+            <span class="testimonial__frame">
+              <img src="assets/img/depoimento-03.webp" alt="Depoimento da Julia sobre o material" loading="lazy" width="760" height="1685">
+            </span>
+          </button>
+        </li>
+        <li class="carousel__item">
+          <button type="button" class="testimonial" data-index="4" aria-label="Ampliar depoimento">
+            <span class="testimonial__frame">
+              <img src="assets/img/depoimento-04.webp" alt="Depoimento da Manu sobre o material" loading="lazy" width="760" height="1685">
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== BLOCO 5 — OFERTA ===================== -->
+  <section class="section" id="oferta" aria-labelledby="oferta-titulo">
+    <div class="container">
+      <p class="eyebrow">Como começar</p>
+      <h2 class="section-title" id="oferta-titulo">Escolha como você quer começar</h2>
+      <p class="section-subtext">Você pode começar pelo Essencial ou levar a coleção completa.</p>
+
+      <div class="pricing-grid">
+
+        <div class="plan-card" id="plano-essencial">
+          <p class="plan-card__name">Essencial</p>
+          <p class="plan-card__tagline">Para quem quer começar.</p>
+
+          <p class="plan-card__price">
+            <span class="price__currency">R$</span><span class="price__int" data-price-int="basic"></span><span class="price__dec">,<span data-price-dec="basic"></span></span>
+          </p>
+
+          <ul class="plan-card__list">
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>10 receitas de saladas no pote</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>5 receitas de molhos</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Acesso digital</li>
+          </ul>
+
+          <div class="plan-card__cta">
+            <button type="button" id="basic-offer-btn" class="btn btn--outline btn--block">
+              Quero começar por <span data-price="basic"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="plan-card plan-card--premium" id="plano-completo">
+          <span class="plan-card__badge">Mais completa</span>
+          <p class="plan-card__name">Coleção Completa</p>
+          <p class="plan-card__tagline">Para quem quer variedade de verdade.</p>
+
+          <p class="plan-card__price">
+            <span class="price__currency">R$</span><span class="price__int" data-price-int="premium"></span><span class="price__dec">,<span data-price-dec="premium"></span></span>
+          </p>
+
+          <ul class="plan-card__list">
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>70 receitas de saladas no pote</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>30 receitas de molhos</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Smoothies</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Águas saborizadas</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Shots</li>
+            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Acesso digital</li>
+          </ul>
+
+          <div class="plan-card__cta">
+            <button type="button" id="premium-offer-btn" class="btn btn--terracotta btn--block">
+              Quero a coleção completa
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOCO 6 — GARANTIA ===================== -->
+  <section class="section section--tight guarantee" id="garantia" aria-labelledby="garantia-titulo">
+    <div class="container">
+      <div class="guarantee__box">
+        <svg class="guarantee__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6l8-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div>
+          <h2 class="section-title" id="garantia-titulo" style="font-size:1.4rem;">Experimente com tranquilidade.</h2>
+          <p class="guarantee__text">
+            Você terá <span data-guarantee-days></span> dias para conhecer o material. Se dentro desse período ele não fizer sentido para você, poderá solicitar o reembolso conforme as condições da plataforma.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOCO 7 — FAQ ===================== -->
+  <section class="section" id="faq" aria-labelledby="faq-titulo">
+    <div class="container">
+      <p class="eyebrow">Tire suas dúvidas</p>
+      <h2 class="section-title" id="faq-titulo">Perguntas frequentes</h2>
+
+      <div class="faq">
+        <details class="faq__item" data-question="emagrecimento">
+          <summary>É um programa de emagrecimento?</summary>
+          <p>Não. O material é uma coleção de receitas e ideias práticas para variar suas refeições. Não fazemos promessas de emagrecimento.</p>
+        </details>
+
+        <details class="faq__item" data-question="cozinhar">
+          <summary>Preciso saber cozinhar?</summary>
+          <p>Não. A proposta é trabalhar com receitas práticas e instruções fáceis de acompanhar.</p>
+        </details>
+
+        <details class="faq__item" data-question="ingredientes">
+          <summary>Os ingredientes são difíceis de encontrar?</summary>
+          <p>A maioria das receitas foi pensada para utilizar ingredientes comuns e permitir adaptações de acordo com sua rotina.</p>
+        </details>
+
+        <details class="faq__item" data-question="recebimento">
+          <summary>Como recebo?</summary>
+          <p>Após a confirmação do pagamento, você receberá as instruções para acessar seu material digital.</p>
+        </details>
+
+        <details class="faq__item" data-question="celular">
+          <summary>Posso acessar pelo celular?</summary>
+          <p>Sim. O material foi pensado para ser consultado também pelo celular.</p>
+        </details>
+
+        <details class="faq__item" data-question="diferenca-planos">
+          <summary>Qual a diferença entre o Essencial e a Coleção Completa?</summary>
+          <p>O Essencial inclui 10 receitas de saladas e 5 molhos. A Coleção Completa inclui 70 receitas, 30 molhos e todos os materiais complementares Premium.</p>
+        </details>
+
+        <details class="faq__item" data-question="tempo-acesso">
+          <summary>Por quanto tempo terei acesso?</summary>
+          <p>Em definição — resposta será adicionada em breve.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="section cta-final" aria-labelledby="cta-final-titulo">
+    <div class="container">
+      <h2 class="section-title" id="cta-final-titulo">Comer leve pode ser muito mais gostoso.</h2>
+      <p class="section-subtext">Escolha sua versão e descubra novas combinações para transformar suas refeições.</p>
+      <div class="cta-final__action">
+        <button type="button" class="btn btn--terracotta" data-scroll-target="#oferta">Ver as opções</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Saladas no Pote · Material digital</p>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX DE DEPOIMENTO ===================== -->
+<div class="modal modal--lightbox" id="modal-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Depoimento ampliado">
+  <div class="modal__overlay"></div>
+  <div class="modal__dialog modal__dialog--lightbox">
+    <button type="button" class="modal__close" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+</div>
+
+<!-- ===================== MODAL DOS 3 POTES ===================== -->
+<div class="modal" id="modal-upgrade" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-titulo">
+  <div class="modal__overlay"></div>
+  <div class="modal__dialog">
+    <button type="button" class="modal__close" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <div class="modal__screen modal__screen--pick">
+      <h2 class="modal__title" id="modal-titulo">Antes de finalizar…</h2>
+      <p class="modal__text">Escolha um pote e revele sua condição especial.</p>
+
+      <div class="pots">
+        <button type="button" class="pot" data-pot="1" aria-pressed="false" aria-label="Pote 1">
+          <span class="pot__media media">
+            <img src="assets/img/salada-01.webp" alt="Pote de salada com frango grelhado" loading="lazy" onerror="handleMediaError(this)">
+            <span class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/></svg></span>
+          </span>
+          <span class="pot__label">Pote 1</span>
+          <span class="pot__lock" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <span>Não revelado</span>
+          </span>
+          <span class="pot__reveal" aria-hidden="true">
+            <span class="pot__reveal-badge">50% OFF</span>
+          </span>
+        </button>
+
+        <button type="button" class="pot" data-pot="2" aria-pressed="false" aria-label="Pote 2">
+          <span class="pot__media media">
+            <img src="assets/img/salada-02.webp" alt="Pote de salada com salmão" loading="lazy" onerror="handleMediaError(this)">
+            <span class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/></svg></span>
+          </span>
+          <span class="pot__label">Pote 2</span>
+          <span class="pot__lock" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <span>Não revelado</span>
+          </span>
+          <span class="pot__reveal" aria-hidden="true">
+            <span class="pot__reveal-badge">50% OFF</span>
+          </span>
+        </button>
+
+        <button type="button" class="pot" data-pot="3" aria-pressed="false" aria-label="Pote 3">
+          <span class="pot__media media">
+            <img src="assets/img/salada-03.webp" alt="Pote de salada com camarão" loading="lazy" onerror="handleMediaError(this)">
+            <span class="media__fallback" aria-hidden="true"><svg class="media__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 13c0-5 4-9 9-9h7v2c0 8-6 12-11 12H4v-5Z"/></svg></span>
+          </span>
+          <span class="pot__label">Pote 3</span>
+          <span class="pot__lock" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <span>Não revelado</span>
+          </span>
+          <span class="pot__reveal" aria-hidden="true">
+            <span class="pot__reveal-badge">50% OFF</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal__screen modal__screen--offer" hidden>
+      <p class="offer-emoji-line">🎉 Você liberou 50% OFF</p>
+      <p class="offer-collection-name">Coleção Completa</p>
+
+      <div class="offer-price-panel">
+        <div class="offer-price-compare">
+          <span class="price-old" data-price="premium"></span>
+        </div>
+        <p class="price-new" data-price="upgrade"></p>
+        <p class="offer-highlight">Por apenas <span data-price-diff></span> a mais</p>
+      </div>
+
+      <p class="offer-copy">
+        Você ia levar o Essencial por <strong data-price="basic"></strong>. Por apenas <strong data-price-diff></strong> a mais, leve a coleção completa com 70 receitas + 30 molhos + todos os bônus.
+      </p>
+
+      <div class="offer-actions">
+        <button type="button" id="upgrade-accept-btn" class="btn btn--terracotta btn--block">
+          Quero a completa por <span data-price="upgrade"></span>
+        </button>
+        <button type="button" id="upgrade-decline-btn" class="btn-link">
+          Não, prefiro continuar com o Essencial por <span data-price="basic"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
