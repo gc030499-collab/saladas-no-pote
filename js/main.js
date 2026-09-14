@@ -10,6 +10,11 @@
       console.log('[track]', name, data || {});
     }
     if (window.fbq) {
+      // Os 3 pontos reais de ida ao checkout (checkout_basic/premium/upgrade)
+      // disparam o evento padrão InitiateCheckout, além do custom abaixo.
+      if (name.indexOf('checkout_') === 0) {
+        try { window.fbq('track', 'InitiateCheckout'); } catch (e) { /* pixel ainda não carregado */ }
+      }
       try { window.fbq('trackCustom', name, data || {}); } catch (e) { /* pixel ainda não carregado */ }
     }
   }

@@ -10,6 +10,7 @@ window.SALADA_CONFIG = {
 
   GARANTIA_DIAS: 7,
 
-  // Meta Pixel ID — deixe null até termos o ID; trackEvent() já está pronto pra ligar quando vier.
-  META_PIXEL_ID: null
+  // Meta Pixel — mesmo ID já usado no checkout (Zuptos), pra landing page e checkout caírem no mesmo pixel.
+  // O snippet base fica em index.html; este valor é só referência/documentação.
+  META_PIXEL_ID: "1925294838146815"
 };
