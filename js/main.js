@@ -15,7 +15,12 @@
       if (name.indexOf('checkout_') === 0) {
         try { window.fbq('track', 'InitiateCheckout'); } catch (e) { /* pixel ainda não carregado */ }
       }
-      try { window.fbq('trackCustom', name, data || {}); } catch (e) { /* pixel ainda não carregado */ }
+      // 'page_view' já é coberto pelo evento padrão PageView (disparado no <head>
+      // assim que o Pixel carrega) — evita mandar o mesmo carregamento de página
+      // duas vezes pro Gerenciador de Eventos.
+      if (name !== 'page_view') {
+        try { window.fbq('trackCustom', name, data || {}); } catch (e) { /* pixel ainda não carregado */ }
+      }
     }
   }
   window.trackEvent = trackEvent;
