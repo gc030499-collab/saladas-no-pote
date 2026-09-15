@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/saladas-v2", "destination": "/saladas-v2.html" }
+  ]
+}
